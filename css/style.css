@@ -1,0 +1,108 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+@font-face {
+    font-family: 'Banny Round';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Banny Round'), url('/fonts/Banny\ Font\ Family/Banny-Round.woff') format('woff');
+    }
+@font-face {
+    font-family: 'Banny Light Round';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Banny Light Round'), url('/fonts/Banny\ Font\ Family/Banny-LightRound.woff') format('woff');
+    }
+@font-face {
+    font-family: 'Banny Bold Round';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Banny Bold Round'), url('/fonts/Banny\ Font\ Family/Banny-BoldRound.woff') format('woff');
+    }
+.container {
+    max-width: 1280px;
+	margin: 0 auto;
+}
+.header-wrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.header-blok {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 25px;
+}
+.header-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.header-item {
+	margin-right: 80px;
+}
+.header-link {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 800;
+	color: #FFFFFF;
+    text-decoration: none;
+}
+.header-link:hover {
+	opacity: .75;
+}
+
+/*    MAIN   */
+.main-page {
+	height: 100vh;
+	background: url(../img/header-bg.png) no-repeat center;
+	background-size: cover;
+
+}
