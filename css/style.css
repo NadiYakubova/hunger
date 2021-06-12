@@ -43,36 +43,85 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-body {
-	font-family: 'Open Sans', sans-serif;
+.fl-l {
+    float: left;
+}
+.w-100 {
+    width: 100%;
+}
+.w-50 {
+    width: 50%;
 }
 @font-face {
-    font-family: 'Banny Round';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Banny Round'), url('/fonts/Banny\ Font\ Family/Banny-Round.woff') format('woff');
-    }
+	font-family: "Banny Round";
+	font-display: swap;
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Banny/Banny-BoldRound.woff") format("woff");
+}
 @font-face {
-    font-family: 'Banny Light Round';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Banny Light Round'), url('/fonts/Banny\ Font\ Family/Banny-LightRound.woff') format('woff');
-    }
+	font-family: "Banny Light Round";
+	font-display: swap;
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Banny/Banny-LightRound.woff") format("woff");
+}
 @font-face {
-    font-family: 'Banny Bold Round';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Banny Bold Round'), url('/fonts/Banny\ Font\ Family/Banny-BoldRound.woff') format('woff');
-    }
+	font-family: "Banny Bold Round";
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/Banny/Banny-BoldRound.woff") format("woff");
+}
 .container {
     max-width: 1280px;
 	margin: 0 auto;
 }
+p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 28px;
+}
+span {
+	margin-bottom: 25px;
+	font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 28px;
+}
+h2 {
+    font-family: "Banny Bold Round";
+	font-weight: 700;
+	font-style: normal;
+	font-size: 36px;
+	line-height: 48px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+h3 {
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.yellow-square {
+	width: 250px;
+	height: 250px;
+	border: 15px solid #E8C300;
+	border-radius: 5px;
+}
+/*start HEADER*/
 .header-wrap {
-	position: fixed;
+	/*position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 100%;*/
 }
 .header-blok {
 	display: flex;
@@ -94,15 +143,382 @@ body {
 	font-weight: 800;
 	color: #FFFFFF;
     text-decoration: none;
+	text-transform: uppercase;
 }
 .header-link:hover {
 	opacity: .75;
 }
 
-/*    MAIN   */
+/*   start MAIN   */
 .main-page {
-	height: 100vh;
-	background: url(../img/header-bg.png) no-repeat center;
+	background: url(../img/header-bg.jpg) no-repeat center;
 	background-size: cover;
-
+    padding-top: 340px;
 }
+.main-subtitle {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+    letter-spacing: 0.5em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 14px;
+}
+.main-title {
+	font-family: "Banny Bold Round";
+	font-weight: 700;
+	font-style: normal;
+	font-size: 96px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-align: center;
+}
+.main-title::before {
+	position: absolute;
+	content: " ";
+	width: 60px;
+	height: 5px;
+	border-radius: 50px;
+	background-color: #E8C300;
+	margin-left: 361px;
+    margin-top: 96px;
+}
+.main-button {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 31px 0px 92px;
+}
+.button-mn {
+	width: 200px;
+	height: 60px;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 20px;
+	color: #FFFFFF;
+	background: transparent;
+	cursor: pointer;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.button-mn:first-child {
+	margin-right: 40px;
+}
+.button-mn:hover, .button-mn:focus, .button-mn:active{
+	background-color: #E8C300;
+}
+.main-circle-down {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 93px;
+}
+.fas {
+	color: white;
+	font-size: 40px;
+	
+}
+/*   end MAIN   */
+
+/*   start  ABOUT US   */
+.about-us {
+	clear: both;
+    overflow: hidden;
+}
+.aboutUs-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.about-text {
+	text-align: center;
+	color: #000000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-title::before {
+	position: absolute;
+	content: " ";
+	width: 60px;
+	height: 5px;
+	border-radius: 50px;
+	background-color: #E8C300;
+	margin-left: 60px;
+    margin-top: 50px;
+}
+.about-page {
+	position: relative;
+}
+.about-img1 {
+	padding: 100px;
+    max-width: 475px;
+    max-height: 475px;
+}
+.about-square {
+	position: absolute;
+    top: 29%;
+    right: 0px;
+}
+
+/*   end ABOUT US   */
+
+/*   start TEAM  */
+.team {
+	background: url(../img/specialt.png) center no-repeat;
+	background-size: cover;
+}
+.our-team {
+	padding: 50px 0px 50px;	
+}
+.team-img {
+	padding: 0px 52px 100px 113px;
+    max-width: 475px;
+    max-height: 475px;
+}
+.team-square {
+	position: absolute;
+	top: 17%;
+}
+.team-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;	
+}
+.team-page {
+	position: relative;
+}
+.team-title {
+	color: white;
+}
+.team-title::before {
+	position: absolute;
+	content: " ";
+	width: 60px;
+	height: 5px;
+	border-radius: 50px;
+	background-color: #E8C300;
+	margin-top: 50px;
+    margin-left: 110px;
+}
+.team-text {
+	color: white;
+    text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/*   end TEAM  */
+
+/*   start BOOKING  */
+.booking {
+	background: white no-repeat center;
+	clear: both;
+    overflow: hidden;
+}
+.book-block{ 
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: white;
+}
+.book-title::before {
+	position: absolute;
+	content: " ";
+	width: 60px;
+	height: 5px;
+	border-radius: 50px;
+	background-color: #E8C300;
+	margin-left: 100px;
+    margin-top: 50px;
+}
+.book-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.form-item {
+	flex: 0 1 40%;
+	margin: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.book-btn {
+	width: 82%;
+}
+.book-page {
+	position: relative;
+}
+.book-img {
+	padding: 100px 100px 0px 100px;
+    max-width: 475px;
+    max-height: 475px;
+}
+.book-square {
+	position: absolute;
+	top: 35%;
+    right: 0;
+}
+.book-schedule {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 12px;
+	margin-bottom: 50px;
+}
+/*   end BOOKING  */
+
+/*   start SPECIALTIES  */
+.specialties {
+	background: url(../img/specialty.png) center no-repeat;
+	background-size: cover;
+	clear: both;
+    overflow: hidden;
+}
+.spec-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	color: white;	
+}
+.spec-page {
+	position: relative;
+}
+.spec-img {
+	padding: 0px 40px 100px 100px;
+    max-width: 475px;
+    max-height: 475px;
+}
+.spec-square {
+	position: absolute;
+	top: 15%;
+}
+.spec-text {
+    text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.spec-title::before {
+	position: absolute;
+	content: " ";
+	width: 60px;
+	height: 5px;
+	border-radius: 50px;
+	background-color: #E8C300;
+	margin-top: 50px;
+    margin-left: 180px;
+}
+
+/*   end SPECIALTIES  */
+
+/*   start MENU  */
+.menu {
+	height: 100vh;
+}
+.menu-block {
+	text-align: center;
+	padding-top: 100px;
+}
+.menu-title::before {
+	position: absolute;
+	content: " ";
+	width: 60px;
+	height: 5px;
+	border-radius: 50px;
+	background-color: #E8C300;
+	margin-top: 50px;
+    margin-left: 120px;
+}
+#tabs {
+	margin: 10px 0;
+	margin-bottom: 100px;
+}
+.tabs-nav {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	overflow: hidden;
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.tabs-nav li {
+	display: block;
+	float: left;
+	padding: 0;
+	list-style: none;
+}    
+.tabs-nav a {
+	display: block;
+	padding: 10px 20px;
+	border-left: 1px solid #ccc;
+	font-family: 'Open Sans';
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	color: #333333;
+}	
+.tabs-nav li:first-child {
+	border-left-style: none;
+}	
+.tabs-nav li:last-child a {
+	display: block;
+	
+}
+.tabs-nav a.active {
+	background: #fff;
+	color: #000;
+}    
+.tabs-items {
+	border-radius: 0 5px 5px 5px;
+	background: #fff;
+	margin: -1px 0 0 0;
+}
+.tabs-item {
+	padding: 15px;
+}
+.tabs-num {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+	margin-bottom: 100px;
+}
+.tabs-text {
+    font-family: "Banny Bold Round";
+	font-weight: 700;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 28px;
+	text-transform: uppercase;
+}
+.tabs-span {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: none;
+}
+/*   end MENU  */
+
+/*   start PRIVATE  */
+
+
+
+/*   end PRIVATE  */

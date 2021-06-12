@@ -9,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"> <!--подключение шрифта-->
-   
-    
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/67358b0497.js" crossorigin="anonymous"></script>  <!--подключение font aweson-->
+    
 </head>
 <body>
     <header class="header-wrap">
@@ -46,25 +47,705 @@
 
     <main class="main">
         <section class="main-page">
-            
+            <div class="container"> 
+                <div>
+                    <p class="main-subtitle">restaurant</p>
+                    <h1 class="main-title">hungry people</h1>
+                </div>
+                <div class="main-button">
+                    <button class="button-mn" type="submit">book table</button>
+                    <button class="button-mn" type="submit">explore</button>
+                  </div>
+                  <div class="main-circle-down"><i class="fas fa-chevron-circle-down"></i></div>
+            </div>
         </section>
+
+        <section class="about-us">
+            <div class="container">
+                <div class="aboutUs-block">
+                    <div class="about-text fl-l w-50">
+                        <h2 class="about-title">about us</h2>
+                        <p class="aboutText1">
+                            <span class="aboutText2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, 
+                              molestie est a, tempor magna.
+                            </span><br><br>
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, 
+                            enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat 
+                            diam convallis pharetra. Nulla facilisis semper laoreet.
+                        </p>
+                    </div>
+                    <div class="about-page w-50">
+                        <img class="about-img1" src="./img/about-img (1).png" alt="fire in cafe">
+                        <div class="about-square yellow-square"></div>
+                    </div>
+                </div>   
+            </div>
+        </section>
+
+<!--   start TEAM  -->
+        <section class="team">
+            <div class="container">
+                <h3 class="our-team">our team</h3>
+                <div class="team-block"> 
+                    <div class="team-page w-50">
+                        <img class="team-img" src="./img/Rectangle.png" alt="cooker">
+                        <div class="team-square yellow-square"></div>
+                    </div>
+                    <div class="team-text w-50">
+                        <h2 class="team-title">master cheff</h2>
+                        <p class="teamText">
+                            <span class="teamText2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit 
+                              maximus, molestie est a, tempor magna.
+                            </span><br><br>
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, 
+                            enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat 
+                            diam convallis pharetra. Nulla facilisis semper laoreet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--   start BOOKING  -->
+        <section class="booking">
+            <div class="container">
+                <div class="book-block w-100">
+                    <div class="book-form w-50">
+                        <h2 class="book-title">book a table</h2>
+                        <form class="book-form">
+                            <input class="form-item" type="text" placeholder="Name" required/>
+                            <input class="form-item" type="email" placeholder="Email" required/>
+                            <input class="form-item" type="tel" placeholder="Phone" required/>
+                            <select class="form-item" size=" ">
+                                <option value="none" hidden="">People</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <input class="form-item" type="text"  placeholder="Date" required/>
+                            <input class="form-item" type="text"placeholder="Time" required/>
+                        </form>
+                        <button class="book-btn" type="submit">book now</button>
+                    </div>
+                    <div class="book-page w-50">
+                        <img class="book-img" src="./img/about-img (2).png" alt="clock">
+                        <div class="book-square yellow-square"></div>
+                    </div>
+                    <div class="book-schedule">
+                        <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone +40 729 131 637/+40 726 458 782</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--   start SPECIALTIES  -->
+        <section class="specialties">
+            <div class="container">
+                <h3 class="our-team">specialties</h3>
+                <div class="spec-block"> 
+                    <div class="spec-page w-50">
+                        <img class="spec-img" src="./img/Rectangle.png" alt="ice-cream">
+                        <div class="spec-square yellow-square"></div>
+                    </div>
+                    <div class="spec-text w-50">
+                        <h2 class="spec-title">chocolate pancakes</h2>
+                        <p class="specText">
+                            <span class="specText2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit 
+                              maximus, molestie est a, tempor magna.
+                            </span><br><br>
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, 
+                            enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat 
+                            diam convallis pharetra. Nulla facilisis semper laoreet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--   start MENU  -->
+        <section class="menu">
+            <div class="container">
+                <div class="menu-block">
+                    <h2 class="menu-title">delicious menu</h2>
+                    <span class="menuText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis<br> at velit 
+                        maximus, molestie est a, tempor magna.
+                    </span>
+                </div>
+                <div id="tabs">
+                    <!-- Кнопки -->
+                    <ul class="tabs-nav">
+                        <li><a href="#tab-1">soupe</a></li>
+                        <li><a href="#tab-2">pizza</a></li>
+                        <li><a href="#tab-3">pasta</a></li>
+                        <li><a href="#tab-4">desert</a></li>
+                        <li><a href="#tab-5">wine</a></li>
+                        <li><a href="#tab-6">beer</a></li>
+                        <li><a href="#tab-7">drinks</a></li>
+                    </ul>	
+                    
+                    <!-- Контент -->
+                    <div class="tabs-items">
+                        <div class="tabs-item" id="tab-1">
+                            <div class="tabs-num">
+                                <div>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">soupe QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabs-item" id="tab-2">
+                            <div class="tabs-num">
+                                <div>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">PIZZA QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs-item" id="tab-3">
+                            <div class="tabs-num">
+                                <div>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">Pasta QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>	
+                        <div class="tabs-item" id="tab-4">
+                            <div class="tabs-num">
+                                <div>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DESERT QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>		
+                        <div class="tabs-item" id="tab-5">
+                            <div class="tabs-num">
+                                <div>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">WINE QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>	
+                        <div class="tabs-item" id="tab-6">
+                            <div class="tabs-num">
+                                <div>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">BEER QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>	
+                        <div class="tabs-item" id="tab-7">
+                            <div class="tabs-num">
+                                <div>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINK QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINK QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINK QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                    <p class="tabs-text">DRINKS QUATRO STAGIONI  . . . .   55,68 USD<br>
+                                        <span class="tabs-span">Integer ullamcorper neque eu purus euismod</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>					
+                    </div>
+                </div>  
+
+            </div>
+        </section>
+        
+        <!--   start PRIVATE  -->
+        <section class="private-events">
+            <div class="container">
+                <h3 class="private-title">private events</h3>
+        </section>
+
+
+
     </main>
 
 
 
 
 
+
     <!--
-    <section class="about-us"></section>
-    <section class="our-team"></section>
-    <section class="book-table"></section>
-    <section class="specialties"></section>
-    <section class="menu"></section>
-    <section class="private-events"></section>
+    
+    
     <section class="photo"></section>
     <section class="contact"></section> 
     <section class="footer"></section> 
     -->
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    $(function() {
+        var tab = $('#tabs .tabs-items > div'); 
+        tab.hide().filter(':first').show(); 
+        
+        // Клики по вкладкам.
+        $('#tabs .tabs-nav a').click(function(){
+            tab.hide(); 
+            tab.filter(this.hash).show(); 
+            $('#tabs .tabs-nav a').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        }).filter(':first').click();
+     
+        // Клики по якорным ссылкам.
+        $('.tabs-target').click(function(){
+            $('#tabs .tabs-nav a[href=' + $(this).data('id')+ ']').click();
+        });
+    });
+    </script> 
 </body>
 </html>
