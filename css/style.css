@@ -117,27 +117,27 @@ h3 {
 	border-radius: 5px;
 }
 /*start HEADER*/
-.header-wrap {
-	/*position: fixed;
+header {
+	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;*/
+	width: 100%;
 }
-.header-blok {
+.header-block {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	padding-top: 25px;
 }
-.header-list {
+nav ul {
 	display: flex;
 	flex-wrap: wrap;
 }
-.header-item {
+nav ul li {
 	margin-right: 80px;
 }
-.header-link {
+nav ul li a {
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 800;
@@ -145,7 +145,7 @@ h3 {
     text-decoration: none;
 	text-transform: uppercase;
 }
-.header-link:hover {
+nav ul li a:hover {
 	opacity: .75;
 }
 
@@ -195,7 +195,7 @@ h3 {
 .button-mn {
 	width: 200px;
 	height: 60px;
-	font-family: Open Sans;
+	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 12px;
@@ -244,7 +244,6 @@ h3 {
 	align-items: center;
 	justify-content: center;
 }
-
 .about-title::before {
 	position: absolute;
 	content: " ";
@@ -254,6 +253,14 @@ h3 {
 	background-color: #E8C300;
 	margin-left: 60px;
     margin-top: 50px;
+}
+.integer {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 28px;
+	margin-top: 25px;
 }
 .about-page {
 	position: relative;
@@ -447,7 +454,7 @@ h3 {
 	margin: 10px 0;
 	margin-bottom: 100px;
 }
-.tabs-nav {
+#tabs ul {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	overflow: hidden;
@@ -455,13 +462,13 @@ h3 {
     flex-wrap: nowrap;
     justify-content: center;
 }
-.tabs-nav li {
+#tabs ul li {
 	display: block;
 	float: left;
 	padding: 0;
 	list-style: none;
 }    
-.tabs-nav a {
+#tabs ul li a {
 	display: block;
 	padding: 10px 20px;
 	border-left: 1px solid #ccc;
@@ -474,14 +481,11 @@ h3 {
 	text-transform: uppercase;
 	color: #333333;
 }	
-.tabs-nav li:first-child {
+#tabs ul li:first-child {
 	border-left-style: none;
 }	
-.tabs-nav li:last-child a {
-	display: block;
-	
-}
-.tabs-nav a.active {
+
+#tabs ul li a.active {
 	background: #fff;
 	color: #000;
 }    
@@ -490,13 +494,36 @@ h3 {
 	background: #fff;
 	margin: -1px 0 0 0;
 }
-.tabs-item {
+.tabs-box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	padding: 15px;
 }
+.item {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+}
+.wrapper{
+	width: 100%;
+	display: flex;
+	align-items: baseline;
+	margin: 0;
+}
+.dots {
+	flex: 1 1 auto;
+	border-bottom: 4px dotted black;
+	margin:0 5px 0 5px;
+}
+.price {
+	margin: 0;
+}
 .tabs-num {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
 	margin-bottom: 100px;
 }
 .tabs-text {
@@ -506,6 +533,7 @@ h3 {
 	font-size: 18px;
 	line-height: 28px;
 	text-transform: uppercase;
+	margin: 0;
 }
 .tabs-span {
 	font-family: "Open Sans";
